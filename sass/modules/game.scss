@@ -1,0 +1,255 @@
+table#MainContent_enemy_board, table#MainContent_player_board{
+  width: auto;
+}
+
+$game_sprite : "/assets/img/game_sprite.png";
+
+td.cell{
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background: url($game_sprite) -268px -367px;
+}
+
+td.missil-miss
+{
+  background: url($game_sprite) -268px -268px;
+}
+
+td.burn
+{
+  background: url($game_sprite) -268px -103px;
+}
+
+
+table#MainContent_enemy_board tr td.hover, table#MainContent_player_board tr td.hover{
+  background: url($game_sprite) -301px -367px;
+  cursor: move;
+}
+
+
+/* enemy size 5 vertical */
+td.ship-size-5-vertical-1{background: url($game_sprite) -4px -132px;}
+td.ship-size-5-vertical-2{background: url($game_sprite) -4px -100px;}
+td.ship-size-5-vertical-3{background: url($game_sprite) -4px -68px;}
+td.ship-size-5-vertical-4{background: url($game_sprite) -4px -36px;	}
+td.ship-size-5-vertical-5{background: url($game_sprite) -4px -4px;	}
+/* ship size 5 burning */
+td.ship-size-5-vertical-1.burn{background: url($game_sprite) -4px -297px;}
+td.ship-size-5-vertical-2.burn{background: url($game_sprite) -4px -265px;}
+td.ship-size-5-vertical-3.burn{background: url($game_sprite) -4px -233px;}
+td.ship-size-5-vertical-4.burn{background: url($game_sprite) -4px -201px;}
+td.ship-size-5-vertical-5.burn{background: url($game_sprite) -4px -169px;}
+
+/* enemy size 5 horizontal */
+td.ship-size-5-horizontal-1{background: url($game_sprite) -37px -136px;}
+td.ship-size-5-horizontal-2{background: url($game_sprite) -69px -136px;	}
+td.ship-size-5-horizontal-3{background: url($game_sprite) -101px -136px;}
+td.ship-size-5-horizontal-4{background: url($game_sprite) -133px -136px;}
+td.ship-size-5-horizontal-5{background: url($game_sprite) -165px -136px;}
+/* enemy size 5 horizontal burning */
+td.ship-size-5-horizontal-1.burn{background: url($game_sprite) -4px -334px;}
+td.ship-size-5-horizontal-2.burn{background: url($game_sprite) -36px -334px;}
+td.ship-size-5-horizontal-3.burn{background: url($game_sprite) -68px -334px;}
+td.ship-size-5-horizontal-4.burn{background: url($game_sprite) -100px -334px;}
+td.ship-size-5-horizontal-5.burn{background: url($game_sprite) -132px -334px;}
+
+
+
+/* ship size 4 vertical */
+td.ship-size-4-vertical-1{background: url($game_sprite) -37px -100px;}
+td.ship-size-4-vertical-2{background: url($game_sprite) -37px -68px;}
+td.ship-size-4-vertical-3{background: url($game_sprite) -37px -36px;}
+td.ship-size-4-vertical-4{background: url($game_sprite) -37px -4px;}
+/* ship size 4 vertical burning */
+td.ship-size-4-vertical-1.burn{background: url($game_sprite) -37px -265px;}
+td.ship-size-4-vertical-2.burn{background: url($game_sprite) -37px -233px;}
+td.ship-size-4-vertical-3.burn{background: url($game_sprite) -37px -201px;}
+td.ship-size-4-vertical-4.burn{background: url($game_sprite) -37px -169px;}
+
+/* ship size 4 horizontal */
+td.ship-size-4-horizontal-1{background: url($game_sprite) -70px -103px;}
+td.ship-size-4-horizontal-2{background: url($game_sprite) -102px -103px;}
+td.ship-size-4-horizontal-3{background: url($game_sprite) -134px -103px;}
+td.ship-size-4-horizontal-4{background: url($game_sprite) -164px -103px;}
+/* ship size 4 horizontal burning*/
+td.ship-size-4-horizontal-1.burn{background: url($game_sprite) -37px -301px;}
+td.ship-size-4-horizontal-2.burn{background: url($game_sprite) -69px -301px;}
+td.ship-size-4-horizontal-3.burn{background: url($game_sprite) -101px -301px;}
+td.ship-size-4-horizontal-4.burn{background: url($game_sprite) -133px -301px;}
+
+
+/* ship size 3 vertical */
+td.ship-size-3-vertical-1{background: url($game_sprite) -70px -68px;}
+td.ship-size-3-vertical-2{background: url($game_sprite) -70px -36px;}
+td.ship-size-3-vertical-3{background: url($game_sprite) -70px -4px;	}
+/* ship size 3 vertical burning*/
+td.ship-size-3-vertical-1.burn{background: url($game_sprite) -70px -233px;}
+td.ship-size-3-vertical-2.burn{background: url($game_sprite) -70px -201px;}
+td.ship-size-3-vertical-3.burn{background: url($game_sprite) -70px -169px;	}
+
+/* ship size 3 horizontal */
+td.ship-size-3-horizontal-1{background: url($game_sprite) -103px -70px;}
+td.ship-size-3-horizontal-2{background: url($game_sprite) -135px -70px;}
+td.ship-size-3-horizontal-3{background: url($game_sprite) -167px -70px;}
+/* ship size 3 horizontal burning*/
+td.ship-size-3-horizontal-1.burn{background: url($game_sprite) -70px -268px;}
+td.ship-size-3-horizontal-2.burn{background: url($game_sprite) -104px -268px;}
+td.ship-size-3-horizontal-3.burn{background: url($game_sprite) -136px -268px;}
+
+
+/* ship size 2 vertical */
+td.ship-size-2-vertical-1{background: url($game_sprite) -103px -36px;}
+td.ship-size-2-vertical-2{background: url($game_sprite) -103px -4px;}
+/* ship size 2 vertical burning*/
+td.ship-size-2-vertical-1.burn{background: url($game_sprite) -103px -201px;}
+td.ship-size-2-vertical-2.burn{background: url($game_sprite) -103px -169px;}
+
+/* ship size 2 horizontal */
+td.ship-size-2-horizontal-1{background: url($game_sprite) -136px -37px;}
+td.ship-size-2-horizontal-2{background: url($game_sprite) -168px -37px;}
+/* ship size 2 horizontal burning*/
+td.ship-size-2-horizontal-1.burn{background: url($game_sprite) -168px -235px;}
+td.ship-size-2-horizontal-2.burn{background: url($game_sprite) -104px -235px;}
+
+
+/* ship size 1 vertical */
+td.ship-size-1-vertical-1{background: url($game_sprite) -136px -4px;}
+/* ship size 1 vertical burning*/
+td.ship-size-1-vertical-1.burn{background: url($game_sprite) -136px -169px;}
+
+/* ship size 1 horizontal */
+td.ship-size-1-horizontal-1{background: url($game_sprite) -169px -4px;}
+/* ship size 1 horizontal burning*/
+td.ship-size-1-horizontal-1.burn{background: url($game_sprite) -136px -202px;}
+
+
+
+
+
+
+#top-menu{
+  float: none !important;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-image: url("../images/bg_site1.png");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: #0071bd;
+  color: #ccc;
+}
+
+/* Custom container */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.container > hr {
+  margin: 60px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 80px 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+.jumbotron .lead {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+  padding: 0;
+  border: none !important;
+}
+.navbar .nav {
+  margin: 0;
+}
+.navbar .nav li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+  background: url("../images/bg_navbar.png") transparent;
+}
+
+.navbar .nav li.active {
+
+  background: url("../images/bg_navbar_active.png") transparent;
+  color: #eee !important;
+}
+
+.navbar .nav li a {
+  background-color: transparent !important;
+  font-weight: normal;
+  font-size: 16px;
+  color: #eee !important;
+  text-align: center;
+  border-left: 1px solid rgba(255,255,255,.75);
+  border-right: 1px solid rgba(0,0,0,.1);
+  text-shadow: none;
+
+}
+.navbar .nav li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+#header_logo{
+  background-image: url("../images/logo_ultimatepowerpt.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100px;
+  width: 500px;
+  margin-bottom: 2px;
+}
+
+
+
+h3.movie-title{
+  color: #FAAF3B;
+  font-family: helvetica;
+  font-weight: normal;
+}
+
+.list-movies-container{
+  margin: auto;
+}
+
+.movie-shadow{
+  background: url("../images/movie_shadow.png");
+  background-repeat: no-repeat;
+  height: 35px;
+}
+
+.site-header-name
+{
+  margin-bottom:52px;
+}
