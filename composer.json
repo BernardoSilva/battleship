@@ -12,7 +12,8 @@
         "zendframework/zendframework": "2.2.*",
         "zf-commons/zfc-twig": "dev-master",
         "zf-commons/zfc-user": "dev-master",
-        "documentcloud/backbone": "0.9.*",
+        "twitter/bootstrap":"*",
+        "components/backbone": "dev-master",
         "components/underscore": ">=1.4.3"
 
     }

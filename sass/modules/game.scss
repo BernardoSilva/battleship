@@ -1,8 +1,9 @@
-table#MainContent_enemy_board, table#MainContent_player_board{
+table.game-board{
   width: auto;
 }
 
 $game_sprite : "/assets/img/game_sprite.png";
+
 
 td.cell{
   width: 32px;
@@ -24,7 +25,7 @@ td.burn
 }
 
 
-table#MainContent_enemy_board tr td.hover, table#MainContent_player_board tr td.hover{
+table.game-board tr td.hover, table.game-board tr td.hover{
   background: url($game_sprite) -301px -367px;
   cursor: move;
 }
@@ -129,127 +130,3 @@ td.ship-size-1-horizontal-1.burn{background: url($game_sprite) -136px -202px;}
 
 
 
-
-#top-menu{
-  float: none !important;
-}
-
-body {
-  padding-top: 20px;
-  padding-bottom: 60px;
-  background-image: url("../images/bg_site1.png");
-  background-position: top;
-  background-repeat: repeat-x;
-  background-color: #0071bd;
-  color: #ccc;
-}
-
-/* Custom container */
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-.container > hr {
-  margin: 60px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  margin: 80px 0;
-  text-align: center;
-}
-.jumbotron h1 {
-  font-size: 100px;
-  line-height: 1;
-}
-.jumbotron .lead {
-  font-size: 24px;
-  line-height: 1.25;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 60px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-
-/* Customize the navbar links to be fill the entire space of the .navbar */
-.navbar .navbar-inner {
-  padding: 0;
-  border: none !important;
-}
-.navbar .nav {
-  margin: 0;
-}
-.navbar .nav li {
-  display: table-cell;
-  width: 1%;
-  float: none;
-  background: url("../images/bg_navbar.png") transparent;
-}
-
-.navbar .nav li.active {
-
-  background: url("../images/bg_navbar_active.png") transparent;
-  color: #eee !important;
-}
-
-.navbar .nav li a {
-  background-color: transparent !important;
-  font-weight: normal;
-  font-size: 16px;
-  color: #eee !important;
-  text-align: center;
-  border-left: 1px solid rgba(255,255,255,.75);
-  border-right: 1px solid rgba(0,0,0,.1);
-  text-shadow: none;
-
-}
-.navbar .nav li:first-child a {
-  border-left: 0;
-  border-radius: 3px 0 0 3px;
-}
-.navbar .nav li:last-child a {
-  border-right: 0;
-  border-radius: 0 3px 3px 0;
-}
-
-#header_logo{
-  background-image: url("../images/logo_ultimatepowerpt.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  display: block;
-  height: 100px;
-  width: 500px;
-  margin-bottom: 2px;
-}
-
-
-
-h3.movie-title{
-  color: #FAAF3B;
-  font-family: helvetica;
-  font-weight: normal;
-}
-
-.list-movies-container{
-  margin: auto;
-}
-
-.movie-shadow{
-  background: url("../images/movie_shadow.png");
-  background-repeat: no-repeat;
-  height: 35px;
-}
-
-.site-header-name
-{
-  margin-bottom:52px;
-}

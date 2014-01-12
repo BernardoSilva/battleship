@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+
+
+        <link href="/assets/css/vendor/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="/assets/css/main.css" media="screen" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+                <div class="row">
+                    <div class="span5">
+
+                        <div id="player1"></div>
+                        <div id="player2"></div>
+                        <div id="error"></div>
+                        <div id="add_ship"></div>
+                        <div id="start"></div>
+
+                        {#<table id="MainContent_enemy_board" class="table table-bordered table-condensed">#}
+                            {#<caption>Computer</caption>#}
+                            {#<?php#}
+                            {#for ($row=1; $row <= 10 ; $row++) {#}
+                                {#?>#}
+                                {#<tr id="row-<?php echo $row; ?>">#}
+                                    {#<?php#}
+                                    {#for ($col=1; $col <= 10 ; $col++) {#}
+                                        {#?>#}
+                                        {#<td data-row="<?php echo $row; ?>" data-col="<?php echo $col; ?>" class="<?php echo $row.'-'.$col; ?> cell"> &nbsp; </td>#}
+                                    {#<?php#}
+                                    {#}#}
+                                    {#?>#}
+                                {#</tr>#}
+                            {#<?php#}
+                            {#}#}
+                            {#?>#}
+                        {#</table>#}
+                    </div>
+                    <div class="span5">
+                        {#<table id="MainContent_player_board" class="table table-bordered table-condensed">#}
+                            {#<caption>You</caption>#}
+                            {#<?php#}
+                            {#for ($row=1; $row <= 10 ; $row++) {#}
+                                {#?>#}
+                                {#<tr id="row-<?php echo $row; ?>">#}
+                                    {#<?php#}
+                                    {#for ($col=1; $col <= 10 ; $col++) {#}
+                                        {#?>#}
+                                        {#<td data-row="<?php echo $row; ?>" data-col="<?php echo $col; ?>" class="<?php echo $row.'-'.$col; ?> cell"> &nbsp; </td>#}
+                                    {#<?php#}
+                                    {#}#}
+                                    {#?>#}
+                                {#</tr>#}
+                            {#<?php#}
+                            {#}#}
+                            {#?>#}
+                        {#</table>#}
+                        <div class="player-board"></div>
+                    </div>
+                    <div class="span3">
+                        <a class="btn btn-mini" onclick="Game.setShipOrientation('horizontal');">Orientação: horizontal</a>
+                        <a class="btn btn-mini" onclick="Game.setShipOrientation('vertical');">Orientação: vertical</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+
+
+            <hr>
+            <footer>
+
+            </footer>
+        </div> <!-- /container -->
+
+        <script type="text/javascript" src="/assets/js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/underscore-min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/backbone-min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/buzz.min.js"></script>
+        <!-- <script type="text/javascript" src="/assets/js/game.js"></script> -->
+        <script type="text/javascript" src="/assets/js/game-v2.js"></script>
+
+    </body>
+</html>

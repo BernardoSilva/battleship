@@ -1,6 +1,10 @@
 /* DEFAULTS
 ----------------------------------------------------------*/
 
+$site_backgroud : "/assets/img/bg_site1.png";
+
+
+
 body
 {
   background: #b6b7bc;
@@ -8,7 +12,13 @@ body
   font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
-  color: #696969;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-image: url($site_backgroud);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: #0071bd;
+  color: #cccccc;
 }
 
 a:link, a:visited
