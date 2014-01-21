@@ -26,4 +26,11 @@ class ApiController extends AbstractActionController
     {
         return new JsonModel();
     }
+
+    public function getShipsAction()
+    {
+        return new JsonModel();
+    }
+
+
 }

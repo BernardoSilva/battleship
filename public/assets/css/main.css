@@ -2,7 +2,7 @@
 ----------------------------------------------------------*/
 /* line 9, /Users/benny/Sites/battleship/sass/sass/../modules/site.scss */
 body {
-  background: #b6b7bc;
+  background: #003242;
   font-size: .80em;
   font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
   margin: 0px;
@@ -13,7 +13,7 @@ body {
   background-position: top;
   background-repeat: repeat-x;
   background-color: #0071bd;
-  color: #cccccc;
+  color: #014f5c;
 }
 
 /* line 25, /Users/benny/Sites/battleship/sass/sass/../modules/site.scss */
@@ -321,322 +321,329 @@ table.game-board tr td.hover, table.game-board tr td.hover {
   cursor: move;
 }
 
+/* line 34, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+.enemy-board, .player-board {
+  float: left;
+  margin: 10px;
+  border: 1px solid #dabd91;
+}
+
 /* enemy size 5 vertical */
-/* line 35, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 44, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-1 {
   background: url("/assets/img/game_sprite.png") -4px -132px;
 }
 
-/* line 36, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 45, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-2 {
   background: url("/assets/img/game_sprite.png") -4px -100px;
 }
 
-/* line 37, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 46, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-3 {
   background: url("/assets/img/game_sprite.png") -4px -68px;
 }
 
-/* line 38, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 47, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-4 {
   background: url("/assets/img/game_sprite.png") -4px -36px;
 }
 
-/* line 39, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 48, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-5 {
   background: url("/assets/img/game_sprite.png") -4px -4px;
 }
 
 /* ship size 5 burning */
-/* line 41, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 50, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-1.burn {
   background: url("/assets/img/game_sprite.png") -4px -297px;
 }
 
-/* line 42, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 51, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-2.burn {
   background: url("/assets/img/game_sprite.png") -4px -265px;
 }
 
-/* line 43, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 52, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-3.burn {
   background: url("/assets/img/game_sprite.png") -4px -233px;
 }
 
-/* line 44, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 53, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-4.burn {
   background: url("/assets/img/game_sprite.png") -4px -201px;
 }
 
-/* line 45, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 54, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-vertical-5.burn {
   background: url("/assets/img/game_sprite.png") -4px -169px;
 }
 
 /* enemy size 5 horizontal */
-/* line 48, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 57, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-1 {
   background: url("/assets/img/game_sprite.png") -37px -136px;
 }
 
-/* line 49, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 58, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-2 {
   background: url("/assets/img/game_sprite.png") -69px -136px;
 }
 
-/* line 50, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 59, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-3 {
   background: url("/assets/img/game_sprite.png") -101px -136px;
 }
 
-/* line 51, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 60, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-4 {
   background: url("/assets/img/game_sprite.png") -133px -136px;
 }
 
-/* line 52, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 61, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-5 {
   background: url("/assets/img/game_sprite.png") -165px -136px;
 }
 
 /* enemy size 5 horizontal burning */
-/* line 54, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 63, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-1.burn {
   background: url("/assets/img/game_sprite.png") -4px -334px;
 }
 
-/* line 55, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 64, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-2.burn {
   background: url("/assets/img/game_sprite.png") -36px -334px;
 }
 
-/* line 56, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 65, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-3.burn {
   background: url("/assets/img/game_sprite.png") -68px -334px;
 }
 
-/* line 57, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 66, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-4.burn {
   background: url("/assets/img/game_sprite.png") -100px -334px;
 }
 
-/* line 58, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 67, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-5-horizontal-5.burn {
   background: url("/assets/img/game_sprite.png") -132px -334px;
 }
 
 /* ship size 4 vertical */
-/* line 63, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 72, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-1 {
   background: url("/assets/img/game_sprite.png") -37px -100px;
 }
 
-/* line 64, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 73, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-2 {
   background: url("/assets/img/game_sprite.png") -37px -68px;
 }
 
-/* line 65, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 74, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-3 {
   background: url("/assets/img/game_sprite.png") -37px -36px;
 }
 
-/* line 66, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 75, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-4 {
   background: url("/assets/img/game_sprite.png") -37px -4px;
 }
 
 /* ship size 4 vertical burning */
-/* line 68, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 77, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-1.burn {
   background: url("/assets/img/game_sprite.png") -37px -265px;
 }
 
-/* line 69, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 78, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-2.burn {
   background: url("/assets/img/game_sprite.png") -37px -233px;
 }
 
-/* line 70, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 79, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-3.burn {
   background: url("/assets/img/game_sprite.png") -37px -201px;
 }
 
-/* line 71, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 80, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-vertical-4.burn {
   background: url("/assets/img/game_sprite.png") -37px -169px;
 }
 
 /* ship size 4 horizontal */
-/* line 74, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 83, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-1 {
   background: url("/assets/img/game_sprite.png") -70px -103px;
 }
 
-/* line 75, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 84, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-2 {
   background: url("/assets/img/game_sprite.png") -102px -103px;
 }
 
-/* line 76, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 85, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-3 {
   background: url("/assets/img/game_sprite.png") -134px -103px;
 }
 
-/* line 77, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 86, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-4 {
   background: url("/assets/img/game_sprite.png") -164px -103px;
 }
 
 /* ship size 4 horizontal burning*/
-/* line 79, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 88, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-1.burn {
   background: url("/assets/img/game_sprite.png") -37px -301px;
 }
 
-/* line 80, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 89, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-2.burn {
   background: url("/assets/img/game_sprite.png") -69px -301px;
 }
 
-/* line 81, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 90, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-3.burn {
   background: url("/assets/img/game_sprite.png") -101px -301px;
 }
 
-/* line 82, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 91, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-4-horizontal-4.burn {
   background: url("/assets/img/game_sprite.png") -133px -301px;
 }
 
 /* ship size 3 vertical */
-/* line 86, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 95, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-1 {
   background: url("/assets/img/game_sprite.png") -70px -68px;
 }
 
-/* line 87, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 96, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-2 {
   background: url("/assets/img/game_sprite.png") -70px -36px;
 }
 
-/* line 88, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 97, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-3 {
   background: url("/assets/img/game_sprite.png") -70px -4px;
 }
 
 /* ship size 3 vertical burning*/
-/* line 90, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 99, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-1.burn {
   background: url("/assets/img/game_sprite.png") -70px -233px;
 }
 
-/* line 91, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 100, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-2.burn {
   background: url("/assets/img/game_sprite.png") -70px -201px;
 }
 
-/* line 92, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 101, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-vertical-3.burn {
   background: url("/assets/img/game_sprite.png") -70px -169px;
 }
 
 /* ship size 3 horizontal */
-/* line 95, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 104, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-1 {
   background: url("/assets/img/game_sprite.png") -103px -70px;
 }
 
-/* line 96, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 105, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-2 {
   background: url("/assets/img/game_sprite.png") -135px -70px;
 }
 
-/* line 97, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 106, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-3 {
   background: url("/assets/img/game_sprite.png") -167px -70px;
 }
 
 /* ship size 3 horizontal burning*/
-/* line 99, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 108, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-1.burn {
   background: url("/assets/img/game_sprite.png") -70px -268px;
 }
 
-/* line 100, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 109, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-2.burn {
   background: url("/assets/img/game_sprite.png") -104px -268px;
 }
 
-/* line 101, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 110, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-3-horizontal-3.burn {
   background: url("/assets/img/game_sprite.png") -136px -268px;
 }
 
 /* ship size 2 vertical */
-/* line 105, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 114, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-vertical-1 {
   background: url("/assets/img/game_sprite.png") -103px -36px;
 }
 
-/* line 106, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 115, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-vertical-2 {
   background: url("/assets/img/game_sprite.png") -103px -4px;
 }
 
 /* ship size 2 vertical burning*/
-/* line 108, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 117, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-vertical-1.burn {
   background: url("/assets/img/game_sprite.png") -103px -201px;
 }
 
-/* line 109, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 118, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-vertical-2.burn {
   background: url("/assets/img/game_sprite.png") -103px -169px;
 }
 
 /* ship size 2 horizontal */
-/* line 112, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 121, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-horizontal-1 {
   background: url("/assets/img/game_sprite.png") -136px -37px;
 }
 
-/* line 113, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 122, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-horizontal-2 {
   background: url("/assets/img/game_sprite.png") -168px -37px;
 }
 
 /* ship size 2 horizontal burning*/
-/* line 115, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 124, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-horizontal-1.burn {
   background: url("/assets/img/game_sprite.png") -168px -235px;
 }
 
-/* line 116, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 125, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-2-horizontal-2.burn {
   background: url("/assets/img/game_sprite.png") -104px -235px;
 }
 
 /* ship size 1 vertical */
-/* line 120, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 129, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-1-vertical-1 {
   background: url("/assets/img/game_sprite.png") -136px -4px;
 }
 
 /* ship size 1 vertical burning*/
-/* line 122, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 131, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-1-vertical-1.burn {
   background: url("/assets/img/game_sprite.png") -136px -169px;
 }
 
 /* ship size 1 horizontal */
-/* line 125, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 134, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-1-horizontal-1 {
   background: url("/assets/img/game_sprite.png") -169px -4px;
 }
 
 /* ship size 1 horizontal burning*/
-/* line 127, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
+/* line 136, /Users/benny/Sites/battleship/sass/sass/../modules/game.scss */
 td.ship-size-1-horizontal-1.burn {
   background: url("/assets/img/game_sprite.png") -136px -202px;
 }

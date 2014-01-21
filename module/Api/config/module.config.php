@@ -22,10 +22,10 @@ return array(
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
-                    'board' => array(
+                    'game' => array(
                         'type'    => 'Literal',
                         'options' => array(
-                            'route'    => '/board',
+                            'route'    => '/game',
                             'defaults' => array(
                                 'controller'    => 'api.controller',
                                 'action'        => 'index',
@@ -33,13 +33,35 @@ return array(
                         ),
                         'may_terminate' => true,
                         'child_routes' => array(
-                            'add-ship' => array(
+                            'ships' => array(
                                 'type'    => 'Segment',
                                 'options' => array(
-                                    'route'    => '/add-ship',
+                                    'route'    => '/ships',
                                     'defaults' => array(
                                         'controller' => 'api.controller',
                                         'action' => 'addShip'
+                                    ),
+                                ),
+                                'child_routes' => array(
+                                    'add' => array(
+                                        'type'    => 'Segment',
+                                        'options' => array(
+                                            'route'    => '/add',
+                                            'defaults' => array(
+                                                'controller' => 'api.controller',
+                                                'action' => 'addShip'
+                                            ),
+                                        ),
+                                    ),
+                                    'get' => array(
+                                        'type'    => 'Segment',
+                                        'options' => array(
+                                            'route'    => '/get',
+                                            'defaults' => array(
+                                                'controller' => 'api.controller',
+                                                'action' => 'getShips'
+                                            ),
+                                        ),
                                     ),
                                 ),
                             ),

@@ -31,6 +31,15 @@ table.game-board tr td.hover, table.game-board tr td.hover{
 }
 
 
+.enemy-board, .player-board{
+  float: left;
+  margin: 10px;
+  border: 1px solid $pastel;
+}
+
+
+
+
 /* enemy size 5 vertical */
 td.ship-size-5-vertical-1{background: url($game_sprite) -4px -132px;}
 td.ship-size-5-vertical-2{background: url($game_sprite) -4px -100px;}

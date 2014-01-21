@@ -2,9 +2,13 @@
 return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
+        // required
+        'DoctrineModule',
+        'DoctrineORMModule',
+        'ZfcTwig',
+        // custom modules
         'Application',
         'Api',
-        'ZfcTwig'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
@@ -16,7 +20,6 @@ return array(
         'module_paths' => array(
             './module',
             './vendor',
-            //'ZfcTwig'
         ),
 
         // An array of paths from which to glob configuration files after
